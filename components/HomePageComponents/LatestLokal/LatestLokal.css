@@ -1,0 +1,10 @@
+.lokal-heading{
+    text-align:center;
+    font-family:"Tactic Round Bold";
+    margin-bottom:50px;
+    color:rgb(4, 91, 96);
+    margin-top:150px;
+}
+.lokal-heading h3:nth-child(2){
+    margin-top:100px;
+}

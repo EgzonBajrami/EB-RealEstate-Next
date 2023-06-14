@@ -1,0 +1,49 @@
+footer{
+    width:100%;
+    background-color:#fff;
+    margin-top:300px;
+    min-height:300px;
+}
+.logo-container-footer{
+    height:100px;
+    margin-top:100px;
+}
+.logo-container-footer img{
+    height:auto;
+    width:auto;
+    max-height:100%;
+    max-width:100%;
+}
+.links-container-footer ul{
+    margin-top:100px;
+    list-style:none;
+    display:grid;
+    grid-template:auto / 48% 48%;
+    grid-row-gap:30px;
+    grid-column-gap:30px;
+}
+.links-container-footer ul li a{
+    font-family:"Conthrax";
+    text-decoration:none;
+    color:#393E46;
+    transition:.5s ease;
+}
+.links-container-footer ul li a:hover{
+    transform:scale(1.05);
+    color:#00ADB5;
+}
+.contact-footer{
+    margin-top:100px;
+}
+.contact-footer-title{
+    font-family:"Conthrax";
+    color:#393E46;
+    margin-bottom:30px;
+}
+.contact-details{
+    font-family:"Conthrax Light";
+    font-size:14px;
+}
+.contact-details p:first-child{
+    margin-bottom:30px;
+}

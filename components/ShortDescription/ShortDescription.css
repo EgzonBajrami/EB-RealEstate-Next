@@ -1,0 +1,54 @@
+.short-description-container{
+    margin-top:200px;
+}
+
+.caption-container{
+    text-align:center;
+    font-family:"Conthrax";
+    margin-bottom:50px;
+    color:rgb(4, 91, 96);
+}
+
+.short-description-container .shortdescription-text{
+    font-family:"Tactic Round";
+    font-size:18px;
+    opacity:0;
+    animation-timing-function: linear;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+.short-description-container .shortdescription-text p:first-child{
+    margin-top:50px;
+}
+@keyframes shortDescriptionText{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.shortdescription-image{
+    opacity:0;
+    animation-timing-function: linear;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes shortDescriptionImage{
+    0%{
+        transform:translate3d(400px,0px, 0);
+        opacity:0;
+    }
+    100%{
+        transform:translate3d(0px, 0px, 0px);
+        opacity:1;
+    }
+}
+.shortdescription-image img{
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+    height:auto;
+    border-radius:15px;
+}

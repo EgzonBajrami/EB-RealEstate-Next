@@ -1,0 +1,28 @@
+.eb-intro{
+    background-image:url('../../../public/images/FirstImage.jpg');
+    height:727px;
+}
+.city-holder{
+    height:527px;
+}
+.city-holder img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+.city-text-holder h1{
+    margin-top:100px;
+    font-family:"Conthrax";
+    color:#fff;
+    font-size: 30.2591px;
+    line-height: 130%;
+    text-align:center;
+}
+.city-text-holder p{
+    margin-top:50px;
+    font-family:"Tactic Round Regular";
+    font-size:22px;
+    color:#fff;
+    text-align:center;
+}

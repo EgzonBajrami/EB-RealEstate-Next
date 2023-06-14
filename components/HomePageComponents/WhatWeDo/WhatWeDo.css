@@ -1,0 +1,21 @@
+.whatwedo{
+    margin-top:200px;
+}
+.short-description h2{
+    text-align:center;
+    font-family:"Conthrax";
+}
+.services-container{
+    display:flex;
+    justify-content: center;
+}
+.services-holder{
+    margin-top:100px;
+    display:grid;
+    grid-template: auto / 30% 30% 30%;
+    grid-row-gap:30px;
+    grid-column-gap:30px;
+}
+.initial-service{
+    margin-top:25%;
+}

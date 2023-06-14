@@ -1,0 +1,23 @@
+.banesa-heading{
+    margin-top:200px;
+}
+.banesa-page-text h1{
+    font-family:"Conthrax";
+    font-size:36px;
+    color:rgb(94,64,67)
+}
+.banesa-page-text p{
+    font-family:"Tactic Round";
+    font-size:16px;
+    margin-top:20px;
+}
+
+.image-container img{
+    max-width:100%;
+    max-height:100%;
+    margin-top:15%;
+    border:3px solid rgb(04,64,67);
+    border-radius:15px;
+    width:auto;
+    height:auto;
+}

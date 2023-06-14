@@ -1,0 +1,42 @@
+.services-card{
+    background-color:#fff;
+    height:300px;
+    width:300px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:1rem;
+}
+.services-title{
+    font-family:"Conthrax";
+    margin-top:10px;
+    font-size:24px;
+}
+.services-text{
+    margin-top:25px;
+    text-align:center;
+    font-family:"Tactic Round Regular";
+}
+.services-card-back{
+    background-color:#fff;
+    height:300px;
+    width:300px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius:15px;
+    padding:1rem;
+ 
+}
+.services-card-holder{
+    display:flex;
+
+ 
+}
+.services-card-holder img{
+    width:275px;
+    height:275px;
+    object-position:50% 50%;
+    border-radius:15px;
+
+}

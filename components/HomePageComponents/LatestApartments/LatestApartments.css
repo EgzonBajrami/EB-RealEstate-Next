@@ -1,0 +1,31 @@
+.latest-container{
+    margin-top:200px;
+    background-color:#fff;
+    padding:1rem 1rem 3rem 1rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius:15px;
+    position:relative;
+    margin-bottom:5px;
+}
+.latest-image-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.latest-image-container h2{
+    font-family:"Conthrax";
+    color:#fff;
+    text-shadow: -1px -1px 0  hsla(225, 52%, 25%, 1), 1px -1px 0  hsla(225, 52%, 25%, 1), -1px 1px 0  hsla(225, 52%, 25%, 1), 1px 1px 0  hsla(225, 52%, 25%, 1);
+}
+.linear-holder{
+    position:absolute;
+    width: 983px;
+    height: 613.28px;
+    left: -1006px;
+    top: 320px;
+    
+    background: linear-gradient(245.38deg, rgb(246, 174, 71) 22.5%, rgba(44, 84, 109, 0.457127) 52.76%, #1F3063 85.07%);
+    filter: blur(203.106px);
+}
