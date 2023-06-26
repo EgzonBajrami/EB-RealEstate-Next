@@ -5,11 +5,12 @@ import {useEffect, useState} from 'react';
 import CarouselItems from '../CarouselItems/CarouselItems';
 import TitleContainer from '../TitleContainer/TitleContainer';
 import SingleApartmentItems from '../SingleApartmentItems/SingleApartmentItems';
+import SingleApartmentFrame from '../SingleApartmentFrame/SingleApartmentFrame';
 export default function SingleApartmentContainer(){
     const pathName = usePathname();
     const pathToGet = pathName.split('/')[2];
 
-    const [data, setData] = useState<string[]>();
+    const [data, setData] = useState<any>();
     const [carouselData, setCarouselData] = useState<string[]>();
     useEffect(()=>{
         const getData = async()=>{
@@ -60,6 +61,9 @@ export default function SingleApartmentContainer(){
             {data && (<div className="col-12">
                 <SingleApartmentItems data={data}/>
             </div>)}
+            {data &&(<SingleApartmentFrame
+            latitude={data.acf.latituda}
+            longitute={data.acf.longituda} />)}
         </div>
     </section>
 

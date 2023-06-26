@@ -18,8 +18,11 @@ export default function BanesaHeading({title, firstText, secondText,thumbnail}:B
     return<>
     <section className="container banesa-heading">
         <div className="row">
+            <div className="col-12 banesa-caption">
+            <h1>{title}</h1>
+            </div>
             <div className="col-12 col-md-6 banesa-page-text">
-                <h1>{title}</h1>
+             
                 <p>{firstText}</p>
                 <p>{secondText}</p>
             </div>

@@ -1,8 +1,9 @@
-
-import './EbIntro.css'
-export default function EbIntro(){
+import './EbIntroHouse.css'
+import EbIntroImg from '../../../public/images/houseNight.jpg'
+export default function EbIntroHouse(){
     return<>
-    <section className="container-fluid ps-0 eb-intro">
+    <section className="container-fluid ps-0 eb-intro-house"
+    style={{backgroundImage:`url(${EbIntroImg.src})`}}>
         <div className="row">
      
             <div className="col-md-6 offset-md-3 city-text-holder">

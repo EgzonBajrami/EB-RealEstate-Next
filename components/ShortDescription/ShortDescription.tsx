@@ -1,6 +1,7 @@
 "use client";
 import './ShortDescription.css'
 import ApartmentComplex from '../../public/images/ApartmentComplex.webp'
+import propertyCool from '../../public/images/propertyCool.jpg'
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 interface ShortDescription{
@@ -34,7 +35,7 @@ export default function ShortDescription({propertyType}:ShortDescription){
                         <p>{elem.text}</p>
                         <p>{elem.secondText}</p>
                     </div>
-                    <div className="col-12 col-md-6 shortdescription-image"
+                    <div className="col-12 col-md-6 shortdescription-image propertymove-image"
                     style={{animationName:inView ? "shortDescriptionImage":""}}>
                         <Image src={elem.imageToSend.src} width={elem.imageToSend.width} height={elem.imageToSend.height} alt={elem.altAttribute} />
                     </div>

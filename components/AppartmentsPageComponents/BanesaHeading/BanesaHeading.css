@@ -21,3 +21,9 @@
     width:auto;
     height:auto;
 }
+.banesa-caption{
+    text-align:center;
+    font-family:"Conthrax";
+    margin-bottom:50px;
+    color:rgb(4, 91, 96);
+}

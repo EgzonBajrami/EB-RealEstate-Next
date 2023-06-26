@@ -9,6 +9,7 @@ import LatestProna from '../../components/HomePageComponents/LatestProna/LatestP
 import WhatWeDo from '../../components/HomePageComponents/WhatWeDo/WhatWeDo'
 import ShortDescription from '../../components/ShortDescription/ShortDescription'
 import HouseShortDescription from '../../components/HouseShortDescription/HouseShortDescription'
+import PropertyShortDescription from '../../components/HomePageComponents/PropertyShortDescription/PropertyShortDescription'
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
     <HouseShortDescription propertyType="Shtepia" />
     <LatestHouse />
     <LatestLokal />
+    <PropertyShortDescription propertyType="Prona" />
     <LatestProna />
     </div>
     <Footer />
