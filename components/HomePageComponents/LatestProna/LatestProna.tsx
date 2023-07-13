@@ -7,12 +7,12 @@ export default function LatestProna(){
     const [data, setData] = useState<String[]>();
     useEffect(()=>{
         async function getData(){
-            const result = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/prona?per_page=3`,{
+            const result = await fetch(`/api/getprona`,{
                 method:'GET',
-                mode:'cors'
             })
             if(result.ok){
-                setData(await result.json());
+                const finalData = await result.json();
+                setData(finalData.result);
             }
         }
         getData();

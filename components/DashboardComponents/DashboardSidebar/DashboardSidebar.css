@@ -1,0 +1,55 @@
+.dashboard-sidebar{
+    background: #FFF;
+    width: 247px;
+    height: 100vh;
+    border-right:1px solid #EFECEC;
+}
+
+.dashboard-logo{
+    position:relative;
+    width:50%;
+    height:200px;
+    margin-left:25%;
+    top:54px;
+}
+
+.dashboard-logo img{
+    max-width:100%;
+    max-height:100%;
+    height:auto;
+    width:auto;
+    object-fit:contain;
+}
+
+.menu-holder{
+    margin-left:40px;
+}
+
+.menu-holder h3{
+    font-family: 'Tactic Round Bold';
+    text-transform:uppercase;
+    color: #3629B7;
+    font-size: 18px;
+}
+
+.menu-holder ul{
+    list-style:none;
+    padding-left:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    margin-top:30px;
+}
+
+
+
+.menu-holder ul li{
+    color: #838383;
+    font-family:"Tactic Round Regular";
+    font-size:16px;
+}
+
+.menu-holder ul li:hover{
+    color:#3629B7;
+    cursor:pointer;
+}

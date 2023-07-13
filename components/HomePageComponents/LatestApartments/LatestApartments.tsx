@@ -7,14 +7,14 @@ export default function LatestApartments(){
     useEffect(()=>{
         async function getData(){
   
-            const result = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/banesa?per_page=3`,{
+            const result = await fetch('/api/getapartments',{
                 method:'GET',
-                mode:"cors"
+         
             })
      
             if(result.ok){
                const finalData = await result.json();
-               setData(finalData);
+               setData(finalData.result);
             }
         }
         getData();

@@ -1,0 +1,37 @@
+.reachout-me{
+    font-family:"Conthrax Bold";
+    font-size:22px;
+    color:rgb(4, 91, 96);
+    text-align: center;
+}
+
+
+.submit-form{
+    padding:2rem;
+    border:1px solid rgb(4, 91, 96);
+    border-radius:15px;
+    margin-top:50px;
+    
+}
+
+.input-holder{
+    margin-bottom:20px;
+}
+
+.form-buttons-holder{
+    display:flex;
+    justify-content: center;
+}
+
+.form-buttons-holder button{
+    padding:.5rem .75rem .5rem .75rem;
+    border-radius:15px;
+}
+
+.form-buttons-holder .valid-btn{
+    background-color:rgb(10,25,47) !important;
+    color: rgb(94 234 212);
+    border-radius:15px;
+    padding:.5rem .75rem .5rem .75rem;
+    margin-bottom:50px;
+}

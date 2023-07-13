@@ -10,11 +10,24 @@ export default function LatestPronaCard({data}:latestProna){
         return(
             <div key={index} className="single-card">
                 <div className="image-holder">
-                    <img src={elem.acf.house_image_one} alt={elem.title.rendered} />
+                    <img src={elem.images[0]} alt={elem.title} />
                 </div>
                 <div className="title-holder">
-                    <h3>{elem.title.rendered}</h3>
+                    <h3>{elem.title}</h3>
                 </div>
+                <div className="text-holder">
+                <p>{elem.text}</p>
+                </div>
+                <div className="content-items">
+                <div className="euro">
+                <span className="euro">&#8364;</span>
+                </div>
+                    <h3>{elem.price}</h3>
+                    {elem.type==="Po" && (
+                        <span>/Muaj</span>
+                    )} 
+                    
+                    </div>
                 <div className="link-holder">
              
                     <Link   href={{

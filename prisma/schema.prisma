@@ -1,0 +1,86 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now())
+
+}
+
+model Apartments {
+  id Int @id @default(autoincrement())
+  title String
+  text String
+  city String
+  rooms String
+  bathroom String
+  space String
+  price String
+  type String
+  latitude String?
+  longitude String?
+  images String[]
+  createdAt DateTime @default(now())
+
+}
+
+model Houses {
+  id Int @id @default(autoincrement())
+  title String
+  text String
+  city String
+  rooms String
+  bathroom String
+  space String
+  floors String
+  price String
+  type String
+  latitude String?
+  longitude String?
+  images String[]
+  createdAt DateTime @default(now())
+
+}
+
+model Properties {
+  id Int @id @default(autoincrement())
+  title String
+  text String
+  city String
+  space String
+  price String
+  type String
+  latitude String?
+  longitude String?
+  images String[]
+  createdAt DateTime @default(now())
+
+}
+
+model Lokale {
+  id Int @id @default(autoincrement())
+  title String
+  text String
+  city String
+  rooms String
+  space String
+  price String
+  type String
+  latitude String?
+  longitude String?
+  images String[]
+  createdAt DateTime @default(now())
+
+}

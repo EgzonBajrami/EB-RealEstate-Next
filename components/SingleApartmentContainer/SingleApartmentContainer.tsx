@@ -14,9 +14,9 @@ export default function SingleApartmentContainer(){
     const [carouselData, setCarouselData] = useState<string[]>();
     useEffect(()=>{
         const getData = async()=>{
-            const result = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/banesa/${pathToGet}`,{
+            const result = await fetch(`/api/getapartments/${pathToGet}`,{
                 method:'GET',
-                mode:'cors'
+                
             })
             console.log(result);
             if(result.ok){

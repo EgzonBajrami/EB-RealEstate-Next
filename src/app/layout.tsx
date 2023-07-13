@@ -2,6 +2,7 @@ import './globals.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../public/assets/fonts/fonts.css'
+import Providers  from '../../lib/store/providers';
 
 
 export const metadata = {
@@ -16,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>
+          {children}
+        </Providers>
+        </body>
     </html>
   )
 }

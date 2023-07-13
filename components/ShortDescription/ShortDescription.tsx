@@ -35,7 +35,7 @@ export default function ShortDescription({propertyType}:ShortDescription){
                         <p>{elem.text}</p>
                         <p>{elem.secondText}</p>
                     </div>
-                    <div className="col-12 col-md-6 shortdescription-image propertymove-image"
+                    <div className="col-12 col-md-6 shortdescription-image "
                     style={{animationName:inView ? "shortDescriptionImage":""}}>
                         <Image src={elem.imageToSend.src} width={elem.imageToSend.width} height={elem.imageToSend.height} alt={elem.altAttribute} />
                     </div>
