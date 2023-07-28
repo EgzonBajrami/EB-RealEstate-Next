@@ -6,6 +6,7 @@ interface LatestData{
 }
 export default function LatestApartmentCard({data}:LatestData){
     console.log(data);
+    
     return<>
     <div className="apartments-grid">
     {data.map((elem:any,index)=>{
@@ -18,10 +19,10 @@ export default function LatestApartmentCard({data}:LatestData){
                     <h3>{elem.title}</h3>
                 </div>
                 <div className="text-holder">
-                    <p>{elem.text}</p>
+                    <p>{elem.text.substring(0,250)}</p>
                 </div>
                 <div className="content-items">
-                <h3>{elem.cmimi}</h3>
+                <h3>{elem.price}</h3>
                 <div className="euro">
                 <span className="euro">&#8364;</span>
                 </div>

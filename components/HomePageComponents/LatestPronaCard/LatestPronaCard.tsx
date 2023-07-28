@@ -16,7 +16,7 @@ export default function LatestPronaCard({data}:latestProna){
                     <h3>{elem.title}</h3>
                 </div>
                 <div className="text-holder">
-                <p>{elem.text}</p>
+                <p>{elem.text.substring(0,250)}</p>
                 </div>
                 <div className="content-items">
                 <div className="euro">

@@ -5,6 +5,7 @@ export async function GET(){
         orderBy: {
           createdAt: "desc",
         },
+        skip:1
       });
     
     console.log(result);

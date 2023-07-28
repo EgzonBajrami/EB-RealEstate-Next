@@ -12,7 +12,7 @@ export default function ApartmentCard({data}:any){
                     <h3>{data.title}</h3>
                 </div>
                 <div className="text-holder">
-                    <p>{data.text}</p>
+                <p>{data.text.substring(0,250)}</p>
                 </div>
                 <div className="content-items">
                 <h3>{data.price}</h3>

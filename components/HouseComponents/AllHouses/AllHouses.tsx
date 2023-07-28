@@ -8,12 +8,12 @@ export default function AllHouses(){
 
     useEffect(()=>{
         async function getData(){
-            const result = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/shtepia`,{
+            const result = await fetch(`/api/getallhouses`,{
                 method:'GET',
-                mode:'cors'
             })
             if(result.ok){
-                setData(await result.json());
+                const finalData = await result.json();
+                setData(finalData.result);
             }
         }
         getData();

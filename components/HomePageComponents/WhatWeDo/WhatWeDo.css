@@ -19,3 +19,14 @@
 .initial-service{
     margin-top:25%;
 }
+
+@media only screen and (max-width:450px){
+    .services-holder{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .initial-service{
+        margin-top:0%;
+    }
+}

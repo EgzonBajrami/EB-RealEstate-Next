@@ -3,13 +3,14 @@ import Footer from "../../../components/Footer/Footer";
 import Header from "../../../components/Header/Header";
 
 import AllHouses from "../../../components/HouseComponents/AllHouses/AllHouses";
-import EbIntroHouse from "../../../components/HouseComponents/EbIntroHouse/EbIntroHouse";
+
+import FirstHouse from "../../../components/HouseComponents/FirstHouse/FirstHouse";
 import HouseImage from '../../../public/images/houseHere.jpg'
 export default function Shtepia(){
     return<>
     <Header />
     <main>
-        <EbIntroHouse />
+       <FirstHouse />
     </main>
     <BanesaHeading 
     title="Zbuloni mrekullitë e shtëpisë së ëndrrave tuaja. E.B Real Estate - partneri juaj në gjetjen dhe blerjen e shtëpisë së përshtatshme për ju dhe familjen tuaj." 

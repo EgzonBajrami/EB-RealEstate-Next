@@ -26,7 +26,7 @@ export default function CarouselItems({data}:CarouselData){
     var settings = {
         infinite: true,
         speed: 500,
-        slidesToShow:3,
+        slidesToShow:2,
         slidesToScroll: 1,
 
         nextArrow:<Arrow />,

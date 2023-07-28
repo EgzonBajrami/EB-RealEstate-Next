@@ -21,23 +21,9 @@ export default function SingleApartmentContainer(){
             console.log(result);
             if(result.ok){
                 const finalData = await result.json();
-                setData(finalData);
-                const datas = [];
-                if(finalData.acf.first_image){
-                    datas.push(finalData.acf.first_image)
-                }
-                if(finalData.acf.second_image){
-                    datas.push(finalData.acf.second_image)
-                }
-                if(finalData.acf.third_image){
-                    datas.push(finalData.acf.third_image)
-                }
-                if(finalData.acf.fourth_image){
-                    datas.push(finalData.acf.fourth_image)
-                }
-                if(finalData.acf.fifth_image){
-                    datas.push(finalData.acf.fifth_image)
-                }
+                setData(finalData.result);
+                const datas = finalData.result.images;
+      
                 setCarouselData(datas);
             }
         }   
@@ -62,8 +48,8 @@ export default function SingleApartmentContainer(){
                 <SingleApartmentItems data={data}/>
             </div>)}
             {data &&(<SingleApartmentFrame
-            latitude={data.acf.latituda}
-            longitute={data.acf.longituda} />)}
+            latitude={data.latitude}
+            longitute={data.longitute} />)}
         </div>
     </section>
 

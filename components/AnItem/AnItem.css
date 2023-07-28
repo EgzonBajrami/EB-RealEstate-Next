@@ -1,0 +1,130 @@
+.anitem-container{
+    width:100%;
+    padding:1rem;
+    display:grid;
+    grid-template:auto / 50% 50%;
+    height:100%;
+    background-color:#fff;
+    border-radius:15px;
+}
+
+.anitem-image{
+    height:100%;
+}
+
+.anitem-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.anitem-items{
+    padding:0rem 1rem 0rem 1rem;
+    position:relative;
+}
+
+.apartment-single-card{
+    display:flex;
+    flex-direction:column;
+    min-height:400px;
+
+    margin-top:20px;
+}
+
+.apartment-single-card .text-holder p{
+    width: 90%;
+    margin-left:5%;
+    font-family:"Tactic Round Regular";
+    font-size:14px;
+ 
+}
+
+.anitem-title h3{
+    text-align:center;
+    font-family:'Conthrax';
+    font-size:18px;
+    color:#393E46;
+}
+.anitem-text{
+    display:flex;
+    justify-content: center;
+  
+    min-height:300px;
+
+}
+
+.anitem-items .link-holder{
+    display:flex;
+    justify-content: center;
+}
+.anitem-items .link-holder button{
+    padding:10px 20px 10px 20px;
+    font-family:"Tactic Round Bold";
+    border-color:transparent;
+    border-radius:15px;
+    background:#F66B0E;
+    color:#fff;
+    transition:.5s ease;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.anitem-items .link-holder button:hover{
+    transform:scale(1.05);
+}
+
+.content-items{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    width:90%;
+    margin-left:5%;
+}
+.content-items h3{
+    font-weight: 600;
+    font-size: 20px;
+    color: #3151b7;
+}
+.content-items span{
+    margin-top:5px;
+    font-size:16px;
+}
+.content-icons{
+    position:absolute;
+    right:0;
+    display:flex;
+    width:50%;
+    flex-direction:row;
+    justify-content: flex-end;
+    color: #817f96;
+}
+.content-icon{
+    display:flex;
+    height:30px;
+}
+.content-icon svg{
+    margin-top:5px;
+}
+
+.content-icon p{
+    margin-left:5px;
+    margin-right:10px;
+}
+
+@media only screen and (max-width:550px){
+
+    .anitem-container{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .anitem-text{
+        min-height:100px;
+        height:100px;
+        overflow:hidden;
+    }
+
+    .content-icon{
+      width:50%;
+    }
+
+}

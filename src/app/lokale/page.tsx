@@ -1,15 +1,24 @@
 import BanesaHeading from "../../../components/AppartmentsPageComponents/BanesaHeading/BanesaHeading";
 import Footer from "../../../components/Footer/Footer";
 import Header from "../../../components/Header/Header";
-import EbIntro from "../../../components/HomePageComponents/EbIntro/EbIntro";
+
 import AllLokale from "../../../components/LokaleComponents/AllLokale/AllLokale";
+import FirstLokal from "../../../components/LokaleComponents/FirstLokal/FirstLokal";
 import LokaleImage from '../../../public/images/lokale.jpg'
 export default function Lokale(){
     return<>
     <Header />
-    <EbIntro />
+    <FirstLokal />
     <main>
-    <BanesaHeading title="E.B Real Estate ju ofronë" firstText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula mi, mollis eu ornare ac, venenatis a diam. Fusce id lectus laoreet, auctor mi ut, mattis enim. Vestibulum efficitur malesuada tempor. Quisque molestie eros ut ligula mattis, sit amet vulputate ligula euismod. Nunc felis est, accumsan eu tempus id, molestie id magna. Suspendisse imperdiet auctor rutrum. Quisque sed dapibus nisi." secondText="Nullam cursus vulputate nibh eget pretium. Suspendisse sit amet aliquam purus. Cras lacus purus, laoreet scelerisque felis eu, faucibus eleifend tellus. Duis in massa ex. Nullam dolor erat, tristique vitae lorem eu, condimentum commodo nisl. Donec venenatis, arcu a dapibus vulputate, nunc diam bibendum dolor, id viverra lorem dui nec dolor. Nam et leo ex. Quisque sed suscipit purus. Duis commodo lorem commodo nibh imperdiet pretium. Ut semper iaculis est, sed laoreet tortor fermentum ac. Integer in massa orci. Cras ac aliquam tellus, nec gravida nunc. Donec neque arcu, sodales eu ultricies vel, maximus vitae turpis. Maecenas sit amet tortor et massa elementum tristique posuere et risus." thumbnail={LokaleImage} />
+    <BanesaHeading title="Kërkoni objekte biznesi në Kosovë me ndihmën e E.B Real Estate. Ofrojmë një gamë të gjerë të pronave komerciale për të arritur ëndrrat tuaja." 
+    firstText="Futeni në një tur virtual ose bëni një vizitë personale për të shfletuar objektet më të mira biznesi në Kosovë, të shoqëruar nga agjentët tanë të përvojshëm të pronave. Jemi të përkushtuar për të siguruar që të zbuloni pronën ideale të përshtatshme për nevojat dhe synimet tuaja të investimit.
+    Nga zyrat moderne në qytet deri te parcelat e atraktive për zhvillime të ardhshme, portofoli ynë ka një shumëllojshmëri pronash biznesi në Kosovë. Çdo pronë ka karakteristikat e saj unike dhe është kujdesur me kujdes për të plotësuar standardet më të larta të cilësisë dhe potencialet e zhvillimit." 
+    secondText="Me ekspertizën tonë të thellë në tregun e pasurive të Kosovës, ju ofrojmë informacionin dhe këshillën e nevojshme për çdo pronë që ju intereson. Ne kemi njohuritë dhe lidhjet e duhura për të siguruar që të merrni ofertat më të mira dhe për të bërë blerjen tuaj të parë një eksperiencë të suksesshme.
+
+    Përveç kësaj, ju ofrojmë ndihmën tonë për të bërë procesin e blerjes sa më të lehtë dhe të shpejtë. Ne do t'ju ndihmojmë në negociatat e çmimeve, në përgatitjen e dokumentacionit të nevojshëm dhe në çdo hap tjetër të procesit të blerjes.
+    
+    E.B Real Estate është këtu për t'ju udhëzuar në kërkimin dhe blerjen e objekteve biznesi në Kosovë. Bashkërisht, do të gjejmë atë pronë të veçantë që ju e keni ëndërruar për të arritur qëllimet tuaja dhe për të krijuar mundësi të reja për rritje dhe investime."
+     thumbnail={LokaleImage} />
         <AllLokale />
     </main>
     <Footer />

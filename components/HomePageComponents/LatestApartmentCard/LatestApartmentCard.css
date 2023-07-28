@@ -88,3 +88,11 @@
     background:#F66B0E;
     color:#fff;
 }
+
+@media only screen and (max-width:550px){
+    .apartments-grid{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+}

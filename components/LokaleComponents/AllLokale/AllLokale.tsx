@@ -6,12 +6,12 @@ export default function AllLokale(){
     const [data, setData] = useState<String[]>();
     useEffect(()=>{
         async function getData(){
-            const result = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/lokale?per_page=3`,{
+            const result = await fetch(`/api/getalllokale`,{
                 method:'GET',
-                mode:'cors'
             })
             if(result.ok){
-                setData(await result.json());
+                const finalData = await result.json();
+                setData(finalData.result);
             }
         }
         getData();

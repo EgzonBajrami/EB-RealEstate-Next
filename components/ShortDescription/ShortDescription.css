@@ -52,3 +52,13 @@
     height:auto;
     border-radius:15px;
 }
+
+@media only screen and (max-width:550px){
+    .short-description-container .shortdescription-text{
+        padding:1rem 2rem 1rem 2rem;
+    }
+
+    .shortdescription-image{
+        padding:0rem 2rem 0rem 2rem;
+    }
+}

@@ -1,3 +1,9 @@
 .all-apartments{
     margin-top:200px;
 }
+
+@media only screen and (max-width:550px){
+    .all-apartments{
+        padding:0rem 1rem 0rem 1rem;
+    }
+}
