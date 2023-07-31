@@ -1,14 +1,18 @@
 "use client"
 import './SingleApartmentContainer.css'
-import {usePathname } from "next/navigation"
+import {usePathname, useRouter} from "next/navigation"
 import {useEffect, useState} from 'react';
+import { useSelector } from 'react-redux';
 import CarouselItems from '../CarouselItems/CarouselItems';
 import TitleContainer from '../TitleContainer/TitleContainer';
 import SingleApartmentItems from '../SingleApartmentItems/SingleApartmentItems';
 import SingleApartmentFrame from '../SingleApartmentFrame/SingleApartmentFrame';
 export default function SingleApartmentContainer(){
     const pathName = usePathname();
+    const router = useRouter();
     const pathToGet = pathName.split('/')[2];
+    const auth = useSelector((state:any)=>state.auth.data);
+    console.log(auth);
 
     const [data, setData] = useState<any>();
     const [carouselData, setCarouselData] = useState<string[]>();
@@ -32,6 +36,7 @@ export default function SingleApartmentContainer(){
     console.log(data);
 
     return<>
+    {data && (
     <section className="container single-apartment-container">
         <div className="row">
             <div className="col-12 single-apartment-title">
@@ -50,8 +55,13 @@ export default function SingleApartmentContainer(){
             {data &&(<SingleApartmentFrame
             latitude={data.latitude}
             longitute={data.longitute} />)}
+
+            <div className='col-12 edit-btn-holder'>
+                {auth &&(<>
+                <button onClick={()=>{router.push(`/dashboard/banesa=${data.id}`)}}>Edito</button></>)}
+            </div>
         </div>
     </section>
-
+    )}
     </>
 }

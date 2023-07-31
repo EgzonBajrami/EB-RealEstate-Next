@@ -16,6 +16,7 @@
     width:100%;
     height:100%;
     object-fit:cover;
+    border-radius:15px;
 }
 
 .anitem-items{
@@ -50,6 +51,8 @@
     justify-content: center;
   
     min-height:300px;
+    font-family:"Tactic Round Regular";
+    font-size:14px;
 
 }
 

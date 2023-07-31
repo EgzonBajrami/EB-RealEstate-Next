@@ -24,7 +24,7 @@ export default function FirstLokal(){
     const [data, setData] = useState<Property[]>([]);
     useEffect(()=>{
         const getData = async()=>{
-            const result = await fetch('/api/latestApartment', {
+            const result = await fetch('/api/latestLokal', {
                 method:"GET"
             })
             if(result.ok){

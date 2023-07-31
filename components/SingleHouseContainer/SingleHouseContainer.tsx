@@ -1,6 +1,7 @@
 "use client"
 import './SingleHouseContainer.css'
-import {usePathname } from "next/navigation"
+import {usePathname, useRouter } from "next/navigation"
+import { useSelector } from 'react-redux';
 import {useEffect, useState} from 'react';
 import CarouselItems from '../CarouselItems/CarouselItems';
 import TitleContainer from '../TitleContainer/TitleContainer';
@@ -8,8 +9,9 @@ import SingleItem from '../SingleItem/SingleItem';
 import SingleApartmentFrame from '../SingleApartmentFrame/SingleApartmentFrame';
 export default function SingleHouseContainer(){
     const pathName = usePathname();
+    const router = useRouter();
     const pathToGet = pathName.split('/')[2];
-
+    const auth = useSelector((state:any)=>state.auth.data)
     const [data, setData] = useState<any>();
     const [carouselData, setCarouselData] = useState<string[]>();
     useEffect(()=>{
@@ -51,6 +53,12 @@ export default function SingleHouseContainer(){
             {data &&(<SingleApartmentFrame
             latitude={data.latitude}
             longitute={data.longitute} />)}
+
+            
+            <div className='col-12 edit-btn-holder'>
+                {auth &&(<>
+                <button onClick={()=>{router.push(`/dashboard/shtepia=${data.id}`)}}>Edito</button></>)}
+            </div>
          
         </div>
     </section>
