@@ -7,7 +7,6 @@ export async function GET(){
         },
         skip:1
       });
-    
-    console.log(result);
+
     return NextResponse.json({result})
 }

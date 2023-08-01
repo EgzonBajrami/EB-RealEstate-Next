@@ -35,7 +35,5 @@ export async function POST(request:NextRequest){
             images:data.images
         }
     })
-    console.log(result);
-
     return NextResponse.json({result})
 }

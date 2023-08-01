@@ -10,7 +10,6 @@ export async function GET(request:NextRequest){
           id:parseInt(requestData)
         }
       });
-    
-    console.log(result);
+
     return NextResponse.json({result})
 }

@@ -289,19 +289,19 @@ const formReducer = (state:FormStateProps, action:ActionProps) => {
 
       const handleItemRemove = async(e:React.SyntheticEvent) =>{
        e.stopPropagation();
-        let data = {
+        let deleteData = {
             id:id,
             type:type
         }
-
-        const result = await fetch(`/api/delete${type}`,{
+        console.log(deleteData);
+        const result = await fetch(`/api/deletebanesa`,{
             method:"POST",
             headers:{
                 'Accept':'application/json',
                 'Content-Type':'application/json',
                 'Authorization': `Bearer ${auth.token}`,
               },
-              body:JSON.stringify(data)
+              body:JSON.stringify(deleteData)
         })
        console.log(result);
        console.log('clicked');

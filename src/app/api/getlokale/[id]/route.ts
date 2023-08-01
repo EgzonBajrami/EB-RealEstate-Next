@@ -9,7 +9,7 @@ export async function GET(request:NextRequest){
   console.log(requestData);
     const result = await prisma.lokale.findUnique({
         where:{
-          id:2
+          id:parseInt(requestData)
         }
       });
     
